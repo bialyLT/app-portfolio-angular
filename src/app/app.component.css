@@ -159,18 +159,3 @@
     padding: .5em;
     color:#a0a0a0;
 }
-
-
-/* 
-    edicion de los proyectos
-*/
-
-.proyectos > h1 {
-    color: #676767;
-}
-
-.proyectos > a {
-    margin: 1em;
-    text-decoration: none;
-    color: #000030;
-}
