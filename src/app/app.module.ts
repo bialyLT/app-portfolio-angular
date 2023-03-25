@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { SectionComponentComponent } from './section-component/section-component.component';
 import { ArticleComponentComponent } from './article-component/article-component.component';
 import { ProyectComponentComponent } from './proyect-component/proyect-component.component';
+import { AdminComponent } from './admin/admin.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ProyectComponentComponent } from './proyect-component/proyect-component
     HeaderComponent,
     SectionComponentComponent,
     ArticleComponentComponent,
-    ProyectComponentComponent
+    ProyectComponentComponent,
+    AdminComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
