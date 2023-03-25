@@ -2,67 +2,40 @@
 
 <app-navbar></app-navbar>
 
-<header class="d-flex flex-column align-items-center border-bottom border-3 border-light">
-  <h1 class="m-5">
-      LIAM BIALY   
-  </h1>
-  <h2 class="p-5 text-center">
-      Programador web Fullstack
-  </h2>
-  <img src="../assets/perfil.png" class="m-1 border border-3 border-light" width="250em" height="250em" alt="perfil">
-</header>
-<section id="aboutme" class="pt-5">
-  <h1>
-      Acerca de mi
-  </h1>
-  <p class="pt-3">
-      Mi nombre es Liam Tobias Bialy, tengo 20 años y nací en Posadas, Misiones, Argentina. Me dedico al desarrollo web Fullstack (Angular y Java Spring Boot) aunque hasta ahora demuestro mas interés por el front-end. Estudio la carrera de Licenciatura en sistemas de la información en la Universidad Nacional de Misiones y pertenezco al Equipo Técnico Jurisdiccional del Ministerio de Educación de la provicia de Misiones.  
-  </p>
-</section>
-<section id="experience">
-  <h1>
-      Experiencia laboral
-  </h1>
-  <article class="grid" style="--bs-columns: 2; --bs-rows: 2; --bs-gap: 1rem;">
-      <img src="#" alt="img" class="g-col-2">
-      <h2 class="g-col-1">
-          ETJ Ministerio de Educación - Área de sistemas y monitoreo
-      </h2>
-      <p class="g-col-1">
-          En la mencionada, la tarea se revoca a la minuciosa carga de datos de carácter tanto cuantitativo como así también cualitativo. Esto con el fin de mantener un mayor conteo y control de los dispositivos llevados adelante por la subsecretaría de educación. El período en el cual estoy llevando a cabo este trabajo es desde 01/01/2022 hasta el 31/12/2022
-      </p>
-  </article>
-  <!-- 
-  <article>
-      <img src="#" alt="img">
-      <h2>
-          subtitulo
-      </h2>
-      <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo architecto, ullam magni mollitia, error incidunt reprehenderit corrup
-      </p>
-  </article>
-  <article>
-      <img src="#" alt="img">
-      <h2>
-          subtitulo
-      </h2>
-      <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo architecto, ullam magni mollitia, error incidunt reprehenderit corrup
-      </p>
-  </article>
-  -->
-</section>
-<section id="formacion">
-  <h1>
-      Formacion academica
-  </h1>
-  <article>
-      <img src="#" alt="img">
-      <h2>Instituto San Miguel</h2>
-      <p>Durante mí educación de nivel secundario, realicé mis estudios en la institución salesiana San miguel. En la misma, me revoque a la formación en la orientación de "bachiller en ciencias sociales y humanidades", la cual tuvo una duración de 5 años, transitada desde el 2015 hasta el 2019 propiamente. Cierta parte de mi educacion primaria tambien fue en dicho establecimiento.</p>
-  </article>
-</section>
+<app-header></app-header>
+
+<app-section-component
+    [id]="'aboutme'"
+    [titulo]="'Acerca de mi'"
+    [desc]="'Mi nombre es Liam Tobias Bialy, tengo 20 años y nací en Posadas, Misiones, Argentina. Me dedico al desarrollo web Fullstack (Angular y Java Spring Boot). Estudio la carrera de Licenciatura en sistemas de la información en la Universidad Nacional de Misiones y pertenezco al Equipo Técnico Jurisdiccional del Ministerio de Educación de la provicia de Misiones.'"
+></app-section-component>
+
+<app-section-component
+    [id]="'experience'"
+    [titulo]="'Experiencia laboral'">
+
+    <app-article-component
+        [titulo]="'ETJ Ministerio de Educación - Área de sistemas y monitoreo'"
+        [imagen]="'../assets/subse.png'"
+        [desc]="'En la mencionada, la tarea se revoca a la minuciosa carga de datos de carácter tanto cuantitativo como así también cualitativo. Esto con el fin de mantener un mayor conteo y control de los dispositivos llevados adelante por la subsecretaría de educación. El período en el cual estoy llevando a cabo este trabajo es desde 01/01/2022 hasta el 31/12/2023.'"
+    ></app-article-component>
+</app-section-component>
+
+<app-section-component
+    [id]="'formacion'"
+    [titulo]="'Formacion academica'"
+
+>
+    <app-article-component
+        [titulo]="'Instituto San Miguel'"
+        [desc]="'Durante mí educación de nivel secundario, realicé mis estudios en la institución salesiana San miguel. En la misma, me revoque a la formación en la orientación de Bachiller en Ciencias Sociales y Humanidades, la cual tuvo una duración de 5 años, transitada desde el 2015 hasta el 2019 propiamente. Cierta parte de mi educacion primaria tambien fue en dicho establecimiento.'"
+    
+    
+    ></app-article-component>
+
+</app-section-component>
+
+
 <section id="skills">
   <h1>
       Skills 

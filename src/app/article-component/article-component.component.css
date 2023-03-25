@@ -1,0 +1,29 @@
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 2 columnas, la primera es 1 fracción y la segunda es 2 fracciones */
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+img {  
+ 
+    width: 100%; /* para que la imagen se ajuste al ancho de la primera columna */
+    height: auto; /* para mantener la proporción de la imagen */
+    grid-column: 1;
+
+}
+
+.content {
+
+    grid-column: 2;
+
+}
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
