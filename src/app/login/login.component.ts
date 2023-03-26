@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators  } from '@angular/forms';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,12 +12,28 @@ export class LoginComponent implements OnInit {
 
   user: FormGroup | any;
 
-  constructor(private fb: FormBuilder, private router : Router) { 
+  constructor(
+
+      private fb: FormBuilder,
+      private router : Router,
+      private authService: AuthService
+     
+     ) { 
   }
 
   onSubmit() {
-//no funciona
-    this.router.navigate(['/admin']);
+
+      if (this.authService.login(this.user.controls.username.value, this.user.controls.password.value)) {
+
+        this.router.navigate(['/admin']);
+      
+      } else {
+        
+        alert("el usuario o la contraseña son incorrectos");
+
+      }
+
+
   }
   
   ngOnInit(): void {

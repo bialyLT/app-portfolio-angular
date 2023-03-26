@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { LoginComponent } from './login/login.component';
-
 @Injectable({
 
   providedIn: 'root'
@@ -9,32 +7,40 @@ import { LoginComponent } from './login/login.component';
 
 export class AuthService {
 
-  constructor(private lc : LoginComponent) { }
+  authenticatedUser: string | null = null;
 
-  login(lc : any) {
+  constructor() { }
 
-      if (lc.username == 'admin' && lc.password == '1234') {
+  
 
-          return true;
+  login(username: string, password: string): boolean {
+    
+    if (username === 'admin' && password === '1234') {
 
-      } else {
+        this.authenticatedUser = username;
+        this.getAuthenticatedUser();
+        this.isAuthenticated();
+        return true; 
+      
+    } else {
 
-          return false;
+      return false;
 
-      }
+    }
+
+
   }
 
   logout() {
-    // Lógica para cerrar sesión aquí
+    this.authenticatedUser = null;
   }
 
   isAuthenticated(): boolean | any {
-    if (this.login(this.lc)) {
-      return true;
-    }
-    else
-    {
-      return false;
-    }
+
+    return this.getAuthenticatedUser() !== null;
+  }
+
+  getAuthenticatedUser(): string | null {
+    return this.authenticatedUser;
   }
 }
