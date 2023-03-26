@@ -1,1 +1,14 @@
-<p>login works!</p>
+
+<form [formGroup]="user" (ngSubmit)="onSubmit()">
+
+    <label for="user">Usuario</label>
+ 
+    <input type="text" name="user" id="user" placeholder="user" formControlName="username">
+    
+    <label for="pw">Contraseña</label>
+ 
+    <input type="password" name="pw" id="pw" placeholder="password" formControlName="password" >
+    
+    <button type="submit" [disabled]="user.invalid">Log in</button>
+
+</form>
