@@ -1,27 +1,55 @@
-# AppPortfolio
+# Angular Portfolio Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+Hey there! 👋 Welcome to the repository for my awesome Angular-powered portfolio. This is where I showcase my skills, projects, and a bit of who I am as a developer.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsive Awesomeness:** Your eyes won't believe how cool it looks on any device!
 
-## Code scaffolding
+- **Project Showcase:** Check out the cool projects I've worked on. They're not just projects; they're adventures in code!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Skills and Tech Magic:** I'll let you in on the secret spells I use—programming languages, frameworks, and tools I've mastered.
 
-## Build
+- **Contact Me:** Let's chat! Whether it's about a project, job opportunity, or just to say hi, I'm just a click away.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+1. Clone this repo to your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```bash
+    git clone https://github.com/your-user/angular-portfolio.git
+    ```
 
-## Running end-to-end tests
+2. Install the magic:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    npm install
+    ```
 
-## Further help
+3. Run the development spell:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    ng serve
+    ```
+
+4. Open your browser and visit `http://localhost:4200/`. Abracadabra! ✨
+
+## Customization
+
+Feel free to make it uniquely yours! Add your personal touch, tweak the styles, or showcase that project you're super proud of. This is your canvas!
+
+## Deployment
+
+Spread the magic by deploying your portfolio! Use services like Netlify, Vercel, or GitHub Pages for your grand entrance into the digital world.
+
+## Technologies Used
+
+- Angular
+- HTML/CSS
+- TypeScript
+
+## Author
+
+Crafted by Liam Bialy.
+
+Let the coding adventures begin!
